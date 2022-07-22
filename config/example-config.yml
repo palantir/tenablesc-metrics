@@ -1,0 +1,17 @@
+---
+datadog:
+  address: "localhost:8125"
+  tags:
+    - "service:tenablesc-metrics"
+interval: 5m
+tenablesc:
+  url: "https://sc.local/rest"
+  adminCredentials:
+    accessKey: FIXME
+    secretKey: FIXME
+  orgCredentials:
+    automation:
+      accessKey: FIXME
+      secretKey: FIXME
+logging:
+  level: debug

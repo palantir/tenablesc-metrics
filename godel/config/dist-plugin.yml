@@ -1,0 +1,19 @@
+products:
+  tenablesc-metrics:
+    build:
+      main-pkg: ./main
+      version-var: github.com/palantir/tenablesc-metrics/version.version
+      os-archs:
+        - os: darwin
+          arch: amd64
+        - os: linux
+          arch: amd64
+    dist:
+      output-dir: build
+      disters:
+        os-arch-bin:
+          type: os-arch-bin
+    publish: {}
+product-defaults:
+  publish:
+    group-id: com.palantir.tenablesc-metrics
