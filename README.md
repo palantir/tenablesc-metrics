@@ -10,4 +10,4 @@ Can be run either one time (if used in a scheduled context) or continuously.  Th
 
 ## Configuration
 
-The go struct for the config can be found [here](cmd/config.go#L26)
+The go struct for the config can be found [here](cmd/config.go#L26); an example configuration file is [here](config/example-config.yml)
