@@ -5,6 +5,7 @@ exclude:
   paths:
     - godel
 environment:
+  CGO_ENABLED: 0
   GO111MODULE: 'on'
   GOFLAGS: -mod=vendor
 plugins:
