@@ -6,10 +6,15 @@ products:
       os-archs:
         - os: darwin
           arch: amd64
+        - os: darwin
+          arch: arm64
         - os: linux
           arch: amd64
+        - os: linux
+          arch: arm
+        - os: windows
+          arch: amd64
     dist:
-      output-dir: build
       disters:
         os-arch-bin:
           type: os-arch-bin
