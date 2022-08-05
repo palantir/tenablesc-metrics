@@ -2,12 +2,12 @@ name: Build
 
 on:
   push:
-    branches: [master]
+    branches: [develop]
     tags-ignore:
       - '**'
 
   pull_request:
-    branches: [master]
+    branches: [develop]
 
   release:
     types: [published]
