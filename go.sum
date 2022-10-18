@@ -158,8 +158,8 @@ github.com/mattn/go-isatty v0.0.14 h1:yVuAays6BHfxijgZPzw+3Zlu5yQgKGP2/hcQbHb7S9
 github.com/mattn/go-isatty v0.0.14/go.mod h1:7GGIvUiUoEMVVmxf/4nioHXj79iQHKdU27kJ6hsGG94=
 github.com/mitchellh/mapstructure v1.5.0 h1:jeMsZIYE/09sWLaz43PL7Gy6RuMjD2eJVyuac5Z2hdY=
 github.com/mitchellh/mapstructure v1.5.0/go.mod h1:bFUtVrKA4DC2yAKiSyO/QUcy7e+RRV2QTWOzhPopBRo=
-github.com/palantir/go-baseapp v0.4.0 h1:TmgTcZGmgOkn+lN2WR3m2AxtP4D61dDXI+G0vCTwoAw=
-github.com/palantir/go-baseapp v0.4.0/go.mod h1:yL4WaVAOzMgD0vuQfiea4TLfaeBJDnZKsoZ59OeOtaE=
+github.com/palantir/go-baseapp v0.4.1 h1:/sJXCedLsOrnSprixEtZFfvG6J1ba594jbViZ3lxU5I=
+github.com/palantir/go-baseapp v0.4.1/go.mod h1:Wmt2iFIyI6ATAbXXdRVocFulKQ6JxrAUrF9WIYghkvY=
 github.com/palantir/tenablesc-client v0.1.0-rc1 h1:h8h0xhjIoBNZ+pJ8WAr/MkpaWkytUK4lRsKVAtgCKMQ=
 github.com/palantir/tenablesc-client v0.1.0-rc1/go.mod h1:HNsuuCbCwG5UQa1zbLbUG4BXf18Ubgzg22vYGiJM1dQ=
 github.com/pelletier/go-toml v1.9.5 h1:4yBQzkHv+7BHq2PQUZF3Mx0IYxG7LsP222s7Agd3ve8=

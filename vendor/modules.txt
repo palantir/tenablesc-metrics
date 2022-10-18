@@ -51,8 +51,8 @@ github.com/mattn/go-isatty
 # github.com/mitchellh/mapstructure v1.5.0
 ## explicit; go 1.14
 github.com/mitchellh/mapstructure
-# github.com/palantir/go-baseapp v0.4.0
-## explicit; go 1.17
+# github.com/palantir/go-baseapp v0.4.1
+## explicit; go 1.19
 github.com/palantir/go-baseapp/baseapp
 github.com/palantir/go-baseapp/baseapp/datadog
 github.com/palantir/go-baseapp/pkg/errfmt
