@@ -158,8 +158,8 @@ github.com/mattn/go-isatty v0.0.14 h1:yVuAays6BHfxijgZPzw+3Zlu5yQgKGP2/hcQbHb7S9
 github.com/mattn/go-isatty v0.0.14/go.mod h1:7GGIvUiUoEMVVmxf/4nioHXj79iQHKdU27kJ6hsGG94=
 github.com/mitchellh/mapstructure v1.5.0 h1:jeMsZIYE/09sWLaz43PL7Gy6RuMjD2eJVyuac5Z2hdY=
 github.com/mitchellh/mapstructure v1.5.0/go.mod h1:bFUtVrKA4DC2yAKiSyO/QUcy7e+RRV2QTWOzhPopBRo=
-github.com/palantir/go-baseapp v0.4.2 h1:467eN5W1CbFKTuMwNJ2O+9IpT8oQZyTSlBceq4l9Guw=
-github.com/palantir/go-baseapp v0.4.2/go.mod h1:q9HkqNo8w4I9U8nUrDn7/Cy0natYX1ZMI6ABEljxnlI=
+github.com/palantir/go-baseapp v0.5.0 h1:UwS79NpRSPG8+PpCb51nQ6g3RKhwAvFv3m8JZdJWwwo=
+github.com/palantir/go-baseapp v0.5.0/go.mod h1:+0ywLkE51MlJT9hHqZzOvlW1ccQjozS14Ujld50RNfg=
 github.com/palantir/tenablesc-client v0.1.0-rc1 h1:h8h0xhjIoBNZ+pJ8WAr/MkpaWkytUK4lRsKVAtgCKMQ=
 github.com/palantir/tenablesc-client v0.1.0-rc1/go.mod h1:HNsuuCbCwG5UQa1zbLbUG4BXf18Ubgzg22vYGiJM1dQ=
 github.com/pelletier/go-toml/v2 v2.0.8 h1:0ctb6s9mE31h0/lhu+J6OPmVeDxJn+kYnJc2jZR9tGQ=
@@ -204,8 +204,8 @@ github.com/stretchr/testify v1.6.1/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/
 github.com/stretchr/testify v1.7.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
 github.com/stretchr/testify v1.7.1/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
 github.com/stretchr/testify v1.8.0/go.mod h1:yNjHg4UonilssWZ8iaSj1OCr/vHnekPRkoO+kdMU+MU=
-github.com/stretchr/testify v1.8.3 h1:RP3t2pwF7cMEbC1dqtB6poj3niw/9gnV4Cjg5oW5gtY=
 github.com/stretchr/testify v1.8.3/go.mod h1:sz/lmYIOXD/1dqDmKjjqLyZ2RngseejIcXlSw2iwfAo=
+github.com/stretchr/testify v1.8.4 h1:CcVxjf3Q8PM0mHUKJCdn+eZZtm5yQwehR5yeSVQQcUk=
 github.com/subosito/gotenv v1.4.2 h1:X1TuBLAMDFbaTAChgCBLu3DU3UPyELpnF2jjJ2cz/S8=
 github.com/subosito/gotenv v1.4.2/go.mod h1:ayKnFf/c6rvx/2iiLrJUk1e6plDbT3edrFNGqEflhK0=
 github.com/yuin/goldmark v1.1.25/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
