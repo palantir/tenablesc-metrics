@@ -19,19 +19,22 @@ import (
 	"strings"
 )
 
-func taggedMetric(name string, tagMap map[string]string) string {
+func buildTaggedMetricString(name string, tagMap map[string]string) string {
 
-	var tags []string
+	var tagStrings []string
 
 	for k, v := range tagMap {
 		if len(v) == 0 {
-			tags = append(tags, fmt.Sprintf("\"%s\"", k))
-		} else {
-			tags = append(tags, fmt.Sprintf("\"%s:%s\"", k, v))
+			continue
 		}
+		tagStrings = append(tagStrings, fmt.Sprintf("%s:%s", k, v))
 	}
 
-	return fmt.Sprintf("%s[%s]", name, strings.Join(tags, ","))
+	if len(tagStrings) == 0 {
+		return name
+	}
+
+	return name + fmt.Sprintf("[%s]", strings.Join(tagStrings, ","))
 }
 
 // GenerateMetricData generates a variety of metrics about SC and returns a map from metric name to value
@@ -48,14 +51,14 @@ func (c Config) GenerateMetricData() (map[string]int64, error) {
 		return nil, err
 	}
 
-	metrics[taggedMetric(healthyScannerCountMetricName, globalTagMap)] = scannerStatus.Unhealthy
-	metrics[taggedMetric(unhealthyScannerCountMetricName, globalTagMap)] = scannerStatus.Unhealthy
-	metrics[taggedMetric(totalScannerCountMetricName, globalTagMap)] = scannerStatus.Total
+	metrics[buildTaggedMetricString(healthyScannerCountMetricName, nil)] = scannerStatus.Unhealthy
+	metrics[buildTaggedMetricString(unhealthyScannerCountMetricName, nil)] = scannerStatus.Unhealthy
+	metrics[buildTaggedMetricString(totalScannerCountMetricName, nil)] = scannerStatus.Total
 
 	for zone, status := range scannerStatus.ByZoneName {
-		metrics[taggedMetric(healthyScannerCountMetricName, map[string]string{scanZoneTagName: zone})] = status.Healthy
-		metrics[taggedMetric(unhealthyScannerCountMetricName, map[string]string{scanZoneTagName: zone})] = status.Unhealthy
-		metrics[taggedMetric(totalScannerCountMetricName, map[string]string{scanZoneTagName: zone})] = status.Total
+		metrics[buildTaggedMetricString(healthyScannerCountMetricName, map[string]string{scanZoneTagName: zone})] = status.Healthy
+		metrics[buildTaggedMetricString(unhealthyScannerCountMetricName, map[string]string{scanZoneTagName: zone})] = status.Unhealthy
+		metrics[buildTaggedMetricString(totalScannerCountMetricName, map[string]string{scanZoneTagName: zone})] = status.Total
 	}
 
 	globalJobMetrics, jobTypeMetrics, err := adminClient.getJobMetrics()
@@ -63,10 +66,10 @@ func (c Config) GenerateMetricData() (map[string]int64, error) {
 		return nil, err
 	}
 	for metricName, metric := range globalJobMetrics {
-		metrics[taggedMetric(metricName, globalTagMap)] = metric
+		metrics[buildTaggedMetricString(metricName, nil)] = metric
 	}
 	for metricName, metric := range jobTypeMetrics {
-		metrics[taggedMetric(jobQueueLengthMetricName, map[string]string{jobTypeTagName: metricName})] = metric
+		metrics[buildTaggedMetricString(jobQueueLengthMetricName, map[string]string{jobTypeTagName: metricName})] = metric
 	}
 
 	for _, cfgOrgName := range c.TenableOrgNames() {
@@ -86,7 +89,7 @@ func (c Config) GenerateMetricData() (map[string]int64, error) {
 			return nil, err
 		}
 		for scanName, metric := range scanAges {
-			metrics[taggedMetric(minutesSinceLastScanMetricName, map[string]string{orgTagName: orgName, scanNameTagName: scanName})] = metric
+			metrics[buildTaggedMetricString(minutesSinceLastScanMetricName, map[string]string{orgTagName: orgName, scanNameTagName: scanName})] = metric
 		}
 
 		scanDurations, err := orgClient.getScheduledActiveScanDurations()
@@ -94,7 +97,7 @@ func (c Config) GenerateMetricData() (map[string]int64, error) {
 			return nil, err
 		}
 		for scanName, metric := range scanDurations {
-			metrics[taggedMetric(scanDurationSecondsMetricName, map[string]string{orgTagName: orgName, scanNameTagName: scanName})] = metric
+			metrics[buildTaggedMetricString(scanDurationSecondsMetricName, map[string]string{orgTagName: orgName, scanNameTagName: scanName})] = metric
 		}
 
 		assetIPCounts, err := orgClient.getAssetIPCounts()
@@ -102,7 +105,7 @@ func (c Config) GenerateMetricData() (map[string]int64, error) {
 			return nil, err
 		}
 		for assetName, metric := range assetIPCounts {
-			metrics[taggedMetric(ipCountMetricName, map[string]string{orgTagName: orgName, assetNameTagName: assetName})] = metric
+			metrics[buildTaggedMetricString(ipCountMetricName, map[string]string{orgTagName: orgName, assetNameTagName: assetName})] = metric
 		}
 
 	}
