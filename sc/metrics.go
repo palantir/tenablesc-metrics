@@ -19,15 +19,21 @@ import (
 	"strings"
 )
 
+const NoneTagValue = "none"
+
 func buildTaggedMetricString(name string, tagMap map[string]string) string {
 
 	var tagStrings []string
 
 	for k, v := range tagMap {
-		if len(v) == 0 {
-			continue
+
+		var tagValue string
+		if v == "" {
+			tagValue = NoneTagValue
+		} else {
+			tagValue = v
 		}
-		tagStrings = append(tagStrings, fmt.Sprintf("%s:%s", k, v))
+		tagStrings = append(tagStrings, fmt.Sprintf("%s:%s", k, tagValue))
 	}
 
 	if len(tagStrings) == 0 {

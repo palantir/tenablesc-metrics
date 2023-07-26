@@ -45,7 +45,7 @@ func Test_buildTaggedMetricString(t *testing.T) {
 			name:       "metric with single tag(empty value)",
 			metricName: scanDurationSecondsMetricName,
 			tagMap:     map[string]string{"foo-key": ""},
-			want:       scanDurationSecondsMetricName,
+			want:       `scanDurationSeconds[foo-key:none]`,
 		},
 		{
 			name:       "metric with multi tag",
