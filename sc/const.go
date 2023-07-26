@@ -24,7 +24,6 @@ const (
 	scanDurationSecondsMetricName   = "scanDurationSeconds"
 	minutesSinceLastScanMetricName  = "minutesSinceLastScan"
 
-	globalTagName   = "global"
 	scanZoneTagName = "scanZone"
 	jobTypeTagName  = "jobType"
 
@@ -32,5 +31,3 @@ const (
 	assetNameTagName = "assetName"
 	scanNameTagName  = "scanName"
 )
-
-var globalTagMap = map[string]string{globalTagName: ""}
