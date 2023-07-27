@@ -30,4 +30,5 @@ const (
 	orgTagName       = "org"
 	assetNameTagName = "assetName"
 	scanNameTagName  = "scanName"
+	noneTagValue     = "none"
 )

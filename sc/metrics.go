@@ -19,8 +19,6 @@ import (
 	"strings"
 )
 
-const NoneTagValue = "none"
-
 func buildTaggedMetricString(name string, tagMap map[string]string) string {
 
 	var tagStrings []string
@@ -29,7 +27,7 @@ func buildTaggedMetricString(name string, tagMap map[string]string) string {
 
 		var tagValue string
 		if v == "" {
-			tagValue = NoneTagValue
+			tagValue = noneTagValue
 		} else {
 			tagValue = v
 		}
