@@ -1,0 +1,6 @@
+type: fix
+fix:
+  description: Revise the metric string generation method to ensure compatibility
+    with prometheus
+  links:
+  - https://github.com/palantir/tenablesc-metrics/pull/90
