@@ -1,0 +1,5 @@
+type: fix
+fix:
+  description: ensure labels are ordered
+  links:
+  - https://github.com/palantir/tenablesc-metrics/pull/91

@@ -16,6 +16,7 @@ package sc
 
 import (
 	"fmt"
+	"sort"
 	"strings"
 )
 
@@ -33,6 +34,7 @@ func buildTaggedMetricString(name string, tagMap map[string]string) string {
 		}
 		tagStrings = append(tagStrings, fmt.Sprintf("%s:%s", k, tagValue))
 	}
+	sort.Strings(tagStrings)
 
 	if len(tagStrings) == 0 {
 		return name

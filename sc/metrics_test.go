@@ -54,7 +54,7 @@ func Test_buildTaggedMetricString(t *testing.T) {
 				"foo-key": "foo-value",
 				"bar-key": "bar-value",
 			},
-			want: `scanDurationSeconds[foo-key:foo-value,bar-key:bar-value]`,
+			want: `scanDurationSeconds[bar-key:bar-value,foo-key:foo-value]`,
 		},
 	}
 	for _, tt := range tests {
