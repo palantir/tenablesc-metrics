@@ -42,7 +42,7 @@ require (
 	go.uber.org/multierr v1.9.0 // indirect
 	goji.io v2.0.2+incompatible // indirect
 	golang.org/x/exp v0.0.0-20230905200255-921286631fa9 // indirect
-	golang.org/x/net v0.16.0 // indirect
+	golang.org/x/net v0.17.0 // indirect
 	golang.org/x/sys v0.13.0 // indirect
 	golang.org/x/text v0.13.0 // indirect
 	gopkg.in/go-playground/assert.v1 v1.2.1 // indirect
