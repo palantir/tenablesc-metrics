@@ -1,4 +1,4 @@
-# github.com/DataDog/datadog-go/v5 v5.0.2
+# github.com/DataDog/datadog-go/v5 v5.6.0
 ## explicit; go 1.13
 github.com/DataDog/datadog-go/v5/statsd
 # github.com/Microsoft/go-winio v0.5.0
@@ -38,8 +38,8 @@ github.com/mattn/go-colorable
 # github.com/mattn/go-isatty v0.0.19
 ## explicit; go 1.15
 github.com/mattn/go-isatty
-# github.com/palantir/go-baseapp v0.5.2
-## explicit; go 1.20
+# github.com/palantir/go-baseapp v0.6.0
+## explicit; go 1.24.0
 github.com/palantir/go-baseapp/appmetrics/emitter/datadog
 github.com/palantir/go-baseapp/baseapp
 github.com/palantir/go-baseapp/baseapp/datadog

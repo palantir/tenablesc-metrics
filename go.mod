@@ -3,8 +3,8 @@ module github.com/palantir/tenablesc-metrics
 go 1.24.0
 
 require (
-	github.com/DataDog/datadog-go/v5 v5.0.2
-	github.com/palantir/go-baseapp v0.5.2
+	github.com/DataDog/datadog-go/v5 v5.6.0
+	github.com/palantir/go-baseapp v0.6.0
 	github.com/palantir/tenablesc-client v0.1.0-rc1
 	github.com/pkg/errors v0.9.1
 	github.com/rcrowley/go-metrics v0.0.0-20250401214520-65e299d6c5c9
