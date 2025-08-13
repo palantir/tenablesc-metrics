@@ -47,8 +47,8 @@ github.com/palantir/go-baseapp/appmetrics/emitter/datadog
 github.com/palantir/go-baseapp/baseapp
 github.com/palantir/go-baseapp/baseapp/datadog
 github.com/palantir/go-baseapp/pkg/errfmt
-# github.com/palantir/tenablesc-client v0.1.0-rc1
-## explicit; go 1.18
+# github.com/palantir/tenablesc-client v0.25.0
+## explicit; go 1.21
 github.com/palantir/tenablesc-client/tenablesc
 # github.com/pelletier/go-toml/v2 v2.2.3
 ## explicit; go 1.21.0
