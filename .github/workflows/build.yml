@@ -36,7 +36,7 @@ jobs:
         go-version: ${{ steps.go_version.outputs.version }}
 
     - name: Cache Godel assets
-      uses: actions/cache@v2
+      uses: actions/cache@v4
       with:
         path: ~/.godel
         key: ${{ runner.os }}-godel-${{ hashFiles('godelw', 'godel/config/godel.yml') }}
@@ -74,7 +74,7 @@ jobs:
         go-version: ${{ steps.go_version.outputs.version }}
 
     - name: Cache Godel assets
-      uses: actions/cache@v2
+      uses: actions/cache@v4
       with:
         path: ~/.godel
         key: ${{ runner.os }}-godel-${{ hashFiles('godelw', 'godel/config/godel.yml') }}
@@ -85,7 +85,7 @@ jobs:
       run: ./godelw dist
 
     - name: Archive distribution
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: dist
         path: |
