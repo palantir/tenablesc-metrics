@@ -38,6 +38,6 @@ require (
 	goji.io v2.0.2+incompatible // indirect
 	golang.org/x/net v0.47.0 // indirect
 	golang.org/x/sys v0.39.0 // indirect
-	golang.org/x/text v0.31.0 // indirect
+	golang.org/x/text v0.32.0 // indirect
 	gopkg.in/go-playground/assert.v1 v1.2.1 // indirect
 )
