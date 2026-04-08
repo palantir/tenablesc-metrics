@@ -40,8 +40,8 @@ github.com/leodido/go-urn/scim/schema
 # github.com/mattn/go-colorable v0.1.14
 ## explicit; go 1.18
 github.com/mattn/go-colorable
-# github.com/mattn/go-isatty v0.0.20
-## explicit; go 1.15
+# github.com/mattn/go-isatty v0.0.21
+## explicit; go 1.21
 github.com/mattn/go-isatty
 # github.com/palantir/go-baseapp v0.6.0
 ## explicit; go 1.24.0
