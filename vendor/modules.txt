@@ -43,8 +43,8 @@ github.com/mattn/go-colorable
 # github.com/mattn/go-isatty v0.0.22
 ## explicit; go 1.21
 github.com/mattn/go-isatty
-# github.com/palantir/go-baseapp v0.6.0
-## explicit; go 1.24.0
+# github.com/palantir/go-baseapp v0.7.0
+## explicit; go 1.26.0
 github.com/palantir/go-baseapp/appmetrics/emitter/datadog
 github.com/palantir/go-baseapp/baseapp
 github.com/palantir/go-baseapp/baseapp/datadog
