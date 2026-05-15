@@ -15,7 +15,7 @@
 package cmd
 
 import (
-	"io/ioutil"
+	"os"
 	"time"
 
 	"github.com/palantir/tenablesc-metrics/sc"
@@ -68,7 +68,7 @@ func parseConfig(bytes []byte) (*config, error) {
 }
 
 func readConfig(cfgFile string) (*config, error) {
-	bytes, err := ioutil.ReadFile(cfgFile)
+	bytes, err := os.ReadFile(cfgFile)
 	if err != nil {
 		return nil, errors.Wrapf(err, "failed reading config file: %s", cfgFile)
 	}
